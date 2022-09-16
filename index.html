@@ -30,7 +30,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Way of the Lord</title>
-      <link rel="icon" type="image/x-icon" href="logo.png">
+      <link rel="icon" type="image/x-icon" href="logo.png" onclick="index.html">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
@@ -38,7 +38,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
     </head>
     <body>
         <header>
-            <a class="logo" href=""><img src="logo.png" alt="logo" height="100px" width="100px" style="border-radius: 50%"></a>
+           <img class="logo" src="logo.png" alt="logo"></a>
             <nav>
                 <ul class="nav__links">
                     <li class="one"><a href="#">Home</a></li>
@@ -46,6 +46,8 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
                     <li class="three"><a href="#">About</a></li>
                 </ul>
             </nav>
+            <a class="cta" href="#" id="fullscreen">Fullscreen</a>
+              <p class="menu cta">Menu</p>
         </header>
         <div id="mobile__menu" class="overlay">
             <a class="close">&times;</a>
