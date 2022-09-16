@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#backgroundimage {
+  display: block;
+background-image: url("background.jpg");
+width: 100vw;
+height: 100vh; 
+background-size: 100% 100%;
+background-repeat: no-repeat;
+position: relative;
+  
+  animation: fadeIn 5s;
+} 
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+background: rgb(121,114,130);
+background: linear-gradient(225deg, rgba(121,114,130,1) 0%, rgba(0,0,0,1) 100%);
+}
+nav
+{
+overflow: auto;
+}
+#logo {
+  margin-right: auto;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px
+}
+#logo:hover{
+  transform: scale(1.2)
+}
+.nav__links {
+  list-style: none;
+  font-size: 25px;
+  display: flex;
+}
+.nav__links a,
+.cta,
+.overlay__content a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.nav__links li {
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+a{
+  box-shadow: inset 0 0 0 0 #eeee;
+  color: #eeee;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+a:hover {
+  box-shadow: inset 150px 0 0 0 #828282;
+  color: white;
+}
+
+.cta {
+  margin-left: 20px;
+  padding: 9px 25px;
+background: rgb(121,114,130);
+background: linear-gradient(225deg, rgba(121,114,130,1) 0%, rgba(0,0,0,1) 100%);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.cta:hover {
+  box-shadow: inset 150px 0 0 0 #4e4e4e
+}
+
+/* Mobile Nav */
+
+.menu {
+  display: none;
+background: rgb(121,114,130);
+background: linear-gradient(225deg, rgba(121,114,130,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+background: rgb(121,114,130);
+background: linear-gradient(225deg, rgba(121,114,130,1) 0%, rgba(0,0,0,1) 100%);
+  overflow-x: hidden;
+  transition: all 0.5s ease 0s;
+}
+
+.overlay--active {
+  width: 100%;
+}
+
+
+.text{
+position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Poppins', sans-serif;
+  font-size: 80px;
+    animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: all 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: white;
+}
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #edf0f1;
+  cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+@media only screen and (max-width: 1300px){
+  .text{
+    font-size: 65px;
+  }
+}
+@media only screen and (max-width: 1000px){
+  .text{
+    font-size: 55px;
+  }
+}
+@media only screen and (min-width: 843px){
+  .text{
+    font-size: 50px;
+  }
+}
+@media only screen and (min-width: 830px ){
+  .text{
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .cta {
+    display: initial;
+  }
+  .nav__links{
+    display: none;
+  }
+  .menu {
+    display: initial;
+  }
+  #logo {
+    height: 70px;
+    width: 70px;
+  }
+  .text{
+    position: absolute;
+    font-size:45px;
+  }
+}
+@media only screen and (max-width: 700px){
+  .text{
+    font-size: 35px;
+  }
+}
+@media only screen and (max-width: 540px){
+  .text{
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 461px){
+  .text{
+    font-size: 27px;
+  }
+  #back
+}
+
